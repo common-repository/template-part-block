@@ -1,0 +1,24 @@
+{
+	"apiVersion": 2,
+	"name": "wpbtp/template-part",
+	"title": "Template Part",
+	"category": "design",
+	"parent": [ "core/post-template" ],
+	"description": "Render a template part from the current theme.",
+	"textdomain": "default",
+	"usesContext": [ "postId", "postType", "queryId" ],
+	"attributes": {
+		"postId": {
+			"type": "string"
+		},
+		"templatePart": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"reusable": false,
+		"html": false,
+		"align": true
+	},
+	"editorScript": "wp-block-template-part"
+}
